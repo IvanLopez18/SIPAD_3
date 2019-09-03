@@ -4,9 +4,26 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>Facelet Title</title>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </h:head>
     <h:body>
-        Hello from Facelets
+
+        <div class="container">
+
+            <h:outputLabel class="p-5" value="Botones para ir a los usuarios"/>
+
+            <div class="col-5 mx-auto">
+                <a href="app/supervisor/indexSupervisor.xhtml" class="btn btn-outline-dark p-1">
+                    Supervisor
+                </a>
+            </div>
+
+        </div>
+
+
+        <script src="resources/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="resources/js/popper.min.js" type="text/javascript"></script>
+        <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
     </h:body>
 </html>
 
