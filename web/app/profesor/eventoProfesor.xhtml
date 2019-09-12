@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <head>
-        <title>ACADEMIA DEPORTIVA BOCANEIROS - Profesor</title>
+        <title>ACADEMIA DEPORTIVA - Profesor </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../resources/css/all.min.css" rel="stylesheet" type="text/css"/>
         <!--Estilos personalizados-->
         <link href="../../resources/css/estilos.css" rel="stylesheet" type="text/css"/>
-    </head>
+        </head>
     <body>
-
-        <!--Contenedor de toda la informacion e interaccion-->
+        <!-- Contenedor de toda la informacion e  interaccion -->
         <div class="container w-100 pr-3 pl-3 pb-3 container">
 
-            <!--Encabezado-->
-            <h:head>
-                <!--Nombre de la academia deportiva -->
-                <div class="col-12 pl-4 justify-content-center bg-info">
-                    <!--Logo de la academia-->
-                    <div class="h-100 justify-content-center">
-                        <div class="h-100 logo">    
-                        </div>
-                        <h2 class="col-12 d-md-block">
-                            Academia Deportiva Bocaneiros
+            <!-- Encavezado -->
+            <header class="row p-1">
 
-                        </h2>
-                    </div>   
+                <!-- Nombre de la academia deportiva -->
+                <div class="col-12 pl-4 justify-content-center">
+                    <!-- Logo de la academia -->
+                    <div class="h-100 justify-content-center">
+                        <div class="h-100 logo">
+                        </div>	
+                        <h2 class="col-12 d-md-none">Bocaneiros</h2>
+                        <h2 class="col-12 d-none d-md-block">Academia Deportiva Bocaneiros</h2>
+                    </div>
                 </div>
-            </h:head> 
+
+                </header>
 
             <!-- Navegacion	 -->
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
 
                 <!-- Boton de moviles -->
-                <h:form>
-                    <h:commandButton class="navbar-toggler" type="button">
+                <h:commandButton class="navbar-toggler" type="button">
 
-                        <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
 
-                    </h:commandButton>
-                </h:form>
+                </h:commandButton> 
+
                 <!-- Botones de pantalla grande -->
                 <div class="collapse navbar-collapse" id="navegador">
 
                     <!-- Botones de paginas -->
-                    <ul class="nav mr-auto">
+                   <ul class="nav mr-auto">
 
                         <h:form class="nav mr-auto">
                             <li class="nav-item active">
-                                <h:commandLink class="nav-link actual" value="Perfil" action="indexProfesor" >   <i class="fas fa-user-alt"></i>
+                                <h:commandLink class="nav-link" value="Perfil" action="indexProfesor" >   <i class="fas fa-user-alt"></i>
                                 </h:commandLink>
                             </li>
                             <li class="nav-item active">
@@ -64,7 +66,7 @@
                                 </h:commandLink>
                             </li>
                             <li class="nav-item active">
-                                <h:commandLink class="nav-link" value="Eventos" action="eventoProfesor" > <i class="far fa-laugh-beam"></i>
+                                <h:commandLink class="nav-link actual" value="Eventos" action="eventoProfesor" > <i class="far fa-laugh-beam"></i>
                                 </h:commandLink>
                             </li>
                             <li class="nav-item active">
@@ -85,67 +87,58 @@
 
                     <h:form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <h:commandButton class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                            <i class="fas fa-search"></i>
-                        </h:commandButton>
+                            <h:commandButton class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </h:commandButton>
                     </h:form>
 
                 </div>
 
             </nav>
 
-            <!-- Informacion del profesor -->
+            <!-- Informaion del deportista -->
             <div class="row">
 
                 <h1 class="col-12 text-success text-center">
-                    Perfil del profesor
+                    Lista de eventos
                 </h1>
 
-                <div class="card mb-3 p-3 col-12 fondo-prefil1" id="cambiar_fondo">
-                    <div class="row no-gutters tras">
+                <div class="card col-12  text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <p class="card-title">Para los profesores es obligatorio la asistencia en los eventos.</p>
+                    </div>
+                </div>
+
+                <div class="row card mb-3 mt-2 mx-auto bg-light">
+                    <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="../../resources/images/foto_perfil_profesor.jpg" class="card-img" alt="..."/>
+                            <img src="../../img/bingo.jpg" class="card-img" alt="..."/>
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
-                                <h5 class="card-title">Nombre completo: </h5>
-                                <p class="card-text">Luis Canderon Torres</p>
-                                <h5 class="card-title">Documento: </h5>
-                                <p class="card-text">922802098</p>
-                                <h5 class="card-title">Categoria deportiva a cargo: </h5>
-                                <p class="card-text">Futbol</p>
-                                <h5 class="card-title">Nivel de la categoria deportiva: </h5>
-                                <p class="card-text">Juvenil</p>
+                                <h5 class="card-title">Nombre del evento: </h5>
+                                <p class="card-text">Ultra Bingo</p>
+                                <h5 class="card-title">Organizador: </h5>
+                                <p class="card-text">Bocaneiros</p>
+                                <h5 class="card-title">Lugar del evento: </h5>
+                                <p class="card-text">Cancha Deportiva Bocaneiros</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
-                                <h5 class="card-title">Dirección: </h5>
-                                <p class="card-text">Calle 35 A sur f # 13-36</p>
-                                <h5 class="card-title">Fecha de nacimiento: </h5>
-                                <p class="card-text">25/02/1995</p>
-                                <h5 class="card-title">Telefono: </h5>
-                                <p class="card-text">7152075</p>
-                                <h5 class="card-title">RH: </h5>
-                                <p class="card-text">B+</p>
+                                <h5 class="card-title">Fecha del evento: </h5>
+                                <p class="card-text">22/02/2019</p>
+                                <h5 class="card-title">Hora del evento: </h5>
+                                <p class="card-text">12:00am</p>
+                                <div class="justify-content-end row mt-5 pt-4 pr-5">
+                                    <a href="info_evento_alumno.html" class="btn btn-primary">Leer mas</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Descripcion de deportista -->
-                <div class="card mb-3 w-100 bg-light">
-                    <div class="row no-gutters w-100">
-                        <div class="col-md-12 text-center">
-                            <div class="card-body">
-                                <h3 class="card-title text-success">Especialidad del entrenador</h3>
-                                <p class="card-text">Entrena a los jovenes para trabajar en equipo, crea estrategisas para torneos.</p>
-                                <p class="card-text">Tiene 5 años de experiencia.</p>
-                                <p class="card-text"><small class="text-muted">Actualizado hace 10 min</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
 
             </div>
@@ -162,10 +155,31 @@
         </div>	
         <!-- Fin del contenedor de toda la informacion -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <script src="../../resources/js/popper.min.js" type="text/javascript"></script>
         <script src="../../resources/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
         <script src="../../resources/js/bootstrap.js" type="text/javascript"></script>
         <script src="../../resources/js/all.min.js" type="text/javascript"></script>
-
     </body>
 </html>
