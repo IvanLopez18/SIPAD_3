@@ -19,8 +19,8 @@
 
     </h:head>
 
-    <f:view locale="en">
 
+    <f:view locale="#{idioma}">
         <h:body>
 
             <!-- Contenedor -->
@@ -79,6 +79,8 @@
                 </div>
 
             </div>
+            
+            <h:messages globalOnly="true" showDetail="true"/>
 
 
             <!-- Archivos JavaScript -->
@@ -88,7 +90,7 @@
             <script src="../../resources/js/all.min.js" type="text/javascript"></script>
 
         </h:body>
-
     </f:view>
+
 
 </html>
