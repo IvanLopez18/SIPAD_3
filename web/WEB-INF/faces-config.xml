@@ -24,6 +24,17 @@
         </resource-bundle>
         
         
+        <!--Cambio de lenguaje para el Profesor-->
+        
+        <resource-bundle>
+            
+            <base-name>sipad.languages.indexProfesor</base-name>
+            
+            <var>lenguajeEdit</var>
+            
+        </resource-bundle>
+        
+        
         
     </application>
 

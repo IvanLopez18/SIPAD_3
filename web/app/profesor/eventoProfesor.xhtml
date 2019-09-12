@@ -7,7 +7,8 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
     <head>
         <title>ACADEMIA DEPORTIVA - Profesor </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,7 +16,7 @@ and open the template in the editor.
         <link href="../../resources/css/all.min.css" rel="stylesheet" type="text/css"/>
         <!--Estilos personalizados-->
         <link href="../../resources/css/estilos.css" rel="stylesheet" type="text/css"/>
-        </head>
+    </head>
     <body>
         <!-- Contenedor de toda la informacion e  interaccion -->
         <div class="container w-100 pr-3 pl-3 pb-3 container">
@@ -34,23 +35,28 @@ and open the template in the editor.
                     </div>
                 </div>
 
-                </header>
+            </header>
 
             <!-- Navegacion	 -->
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
 
                 <!-- Boton de moviles -->
-                <h:commandButton class="navbar-toggler" type="button">
+                <h:form>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
 
-                </h:commandButton> 
+                    </button>
 
+
+
+                </h:form>
                 <!-- Botones de pantalla grande -->
                 <div class="collapse navbar-collapse" id="navegador">
 
                     <!-- Botones de paginas -->
-                   <ul class="nav mr-auto">
+                    <ul class="nav mr-auto">
 
                         <h:form class="nav mr-auto">
                             <li class="nav-item active">
@@ -87,9 +93,9 @@ and open the template in the editor.
 
                     <h:form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <h:commandButton class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                <i class="fas fa-search"></i>
-                            </h:commandButton>
+                        <h:commandLink class="btn btn-success my-2 my-sm-0 " type="submit">
+                            <i class="fas fa-search"></i>
+                        </h:commandLink>
                     </h:form>
 
                 </div>
@@ -112,7 +118,7 @@ and open the template in the editor.
                 <div class="row card mb-3 mt-2 mx-auto bg-light">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="../../img/bingo.jpg" class="card-img" alt="..."/>
+                            <img class="card-img" src="../../resources/images/bingo_fondo.jpg" alt=""/>
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
@@ -131,7 +137,11 @@ and open the template in the editor.
                                 <h5 class="card-title">Hora del evento: </h5>
                                 <p class="card-text">12:00am</p>
                                 <div class="justify-content-end row mt-5 pt-4 pr-5">
-                                    <a href="info_evento_alumno.html" class="btn btn-primary">Leer mas</a>
+                                    <h:form>
+                                        <h:commandLink class="btn btn-success" value="Leer mas" > <i class="far fa-eye"></i>
+
+                                        </h:commandLink>
+                                    </h:form>
                                 </div>
                             </div>
                         </div>
