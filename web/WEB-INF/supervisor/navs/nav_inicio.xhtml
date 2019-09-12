@@ -10,7 +10,8 @@
         <title>Inicio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body>
+
+    <h:body>
         <div class="tab-pane fade show active bg-white w-100 h-100 pb-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
             <div class="row h-100">
@@ -20,7 +21,7 @@
                         <div class="row no-gutters">
                             <div class="col-12 text-danger">
                                 <h2 class="fas fa-arrow-up"></h2>
-                                <p>Arriba estan las opciones</p>
+                                <h:outputText value="Arriba estan las opciones" />
                             </div>
                         </div>
                     </div>
@@ -35,18 +36,19 @@
                             <div class="col-9">
                                 <div class="card-body row">
                                     <h5 class="col-4 col-md-2">Nombre: </h5>
-                                    <p class="col-8 col-md-10">Don Aleman.</p>
+                                    <h:outputText class="col-8 col-md-10" value="Don Aleman."/>
                                     <h5 class="col-4 col-md-2">Cargo: </h5>
-                                    <p class="col-8 col-md-10">Gerente.</p>
+                                    <h:outputText class="col-8 col-md-10" value="Gerente."/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
-    </body>
+
+    </h:body>
+
 </html>
