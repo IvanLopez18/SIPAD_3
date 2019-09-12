@@ -20,16 +20,16 @@
                     <!-- Boton de crear evento -->
                     <li class="nav-item col-6" title="Crear nueva categoria deportiva">
                         <a class="btn btn-outline-primary w-100 actual" id="btn-createE" data-toggle="tab" href="#nav-createE" role="tab" aria-controls="nav-r" aria-selected="true">
-                            <i class="fas fa-plus-square mx-auto"></i> Crear
+                            <i class="fas fa-plus-square mx-auto"></i> <h:outputText value=" #{textSupp.crear}"/>
                         </a> 
                     </li>
 
-                   <h:outputLabel/>
+                    <h:outputLabel/>
 
                     <!-- Boton de consultar evento -->
                     <li class="nav-item col-6" title="Consultar categoria deportiva">
                         <a class="btn btn-outline-primary w-100 actual" id="btn-consultE" data-toggle="tab" href="#nav-consultarE" role="tab" aria-controls="nav-r" aria-selected="true">
-                            <i class="fas fa-book mx-auto"></i> Consultar
+                            <i class="fas fa-book mx-auto"></i> <h:outputText value=" #{textSupp.consultar}"/>
                         </a> 
                     </li>
 
@@ -38,7 +38,7 @@
                     <!-- Boton de modificar evento -->
                     <li class="nav-item col-6" title="Modificar categoria deportiva">
                         <a class="btn btn-outline-success w-100 actual" id="btn-editE" data-toggle="tab" href="#nav-editE" role="tab" aria-controls="nav-r" aria-selected="true">
-                            <i class="fas fa-edit mx-auto"></i> Modificar
+                            <i class="fas fa-edit mx-auto"></i> <h:outputText value=" #{textSupp.modificar}"/>
                         </a> 
                     </li> 
 
@@ -47,7 +47,7 @@
                     <!-- Boton de eliminar evento -->
                     <li class="nav-item col-6" title="Eliminar categoria deportiva">
                         <a class="btn btn-outline-danger w-100 actual" id="btn-eliminarE" data-toggle="tab" href="#nav-eliminarE" role="tab" aria-controls="nav-r" aria-selected="true">
-                            <i class="fas fa-trash-alt"></i> Eliminar
+                            <i class="fas fa-trash-alt"></i> <h:outputText value=" #{textSupp.eliminar}"/>
                         </a> 
                     </li>
                 </ul>	
@@ -61,9 +61,9 @@
                         Para crear un evento se debe llenar todas las casillas del formulario.
                     </h6>
                     <h4 class="fas fa-arrow-down col-12 text-center"></h4>
-                    <div class="col-12 text-center pb-4">
-                        <a href="html/evento/crear_evento_sup.html" class="btn btn-light" target="controlador">Aceptar</a>
-                    </div>
+                    <h:form class="col-12 text-center pb-4">
+                        <h:commandLink action="html/usuarios/formularios/crear_usuario.html" class="btn btn-light" target="controlador" value="#{textSupp.realizarFormulario}"/>
+                    </h:form>
                 </div>
 
                 <!-- Espacio de consultar una evento -->
@@ -72,9 +72,9 @@
                         Se mostrara una tabla con los eventos que se han hecho en la academia.
                     </h6>
                     <h4 class="fas fa-arrow-down col-12 text-center"></h4>
-                    <div class="col-12 text-center pb-4">
-                        <a href="html/evento/evento_sup_lista.html" class="btn btn-light" target="controlador">Aceptar</a>
-                    </div>
+                    <h:form class="col-12 text-center pb-4">
+                        <h:commandLink action="html/usuarios/formularios/crear_usuario.html" class="btn btn-light" target="controlador" value="#{textSupp.realizarFormulario}"/>
+                    </h:form>
                 </div>
 
                 <!-- Espacio de modificar una evento -->
@@ -83,9 +83,9 @@
                         Se podra midificar los datos de los eventos.
                     </h6>
                     <h4 class="fas fa-arrow-down col-12 text-center"></h4>
-                    <div class="col-12 text-center pb-4">
-                        <a href="html/evento/editar_evento_sup.html" class="btn btn-light" target="controlador">Aceptar</a>
-                    </div>
+                    <h:form class="col-12 text-center pb-4">
+                        <h:commandLink action="html/usuarios/formularios/crear_usuario.html" class="btn btn-light" target="controlador" value="#{textSupp.realizarFormulario}"/>
+                    </h:form>
                 </div>
 
                 <!-- Espacio de eliminar una evento -->
@@ -94,9 +94,9 @@
                         Se mostrara una lista donde se podra eliminar los eventos.
                     </h6>
                     <h4 class="fas fa-arrow-down col-12 text-center"></h4>
-                    <div class="col-12 text-center pb-4">
-                        <a href="html/evento/eliminar_evento.html" class="btn btn-light" target="controlador">Aceptar</a>
-                    </div>
+                    <h:form class="col-12 text-center pb-4">
+                        <h:commandLink action="html/usuarios/formularios/crear_usuario.html" class="btn btn-light" target="controlador" value="#{textSupp.realizarFormulario}"/>
+                    </h:form>
                 </div>
 
             </div>

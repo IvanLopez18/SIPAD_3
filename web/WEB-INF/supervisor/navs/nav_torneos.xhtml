@@ -51,7 +51,7 @@ and open the template in the editor.
                     <!-- Boton de eliminar torneos -->
                     <li class="nav-item col-6" title="Eliminar categoria deportiva">
                         <a class="btn btn-outline-danger w-100 actual" id="btn-eliminarT" data-toggle="tab" href="#nav-eliminarT" role="tab" aria-controls="nav-r" aria-selected="true">
-                            <i class="fas fa-trash-alt"></i> <h:outputText value=" #{textSupp.modificar}"/>
+                            <i class="fas fa-trash-alt"></i> <h:outputText value=" #{textSupp.eliminar}"/>
                         </a> 
                     </li>
                 </ul>	
@@ -76,9 +76,9 @@ and open the template in the editor.
                         Se mostrara una tabla con los torneos que se han hecho en la academia.
                     </h6>
                     <h4 class="fas fa-arrow-down col-12 text-center"></h4>
-                    <div class="col-12 text-center pb-4">
-                        <a href="html/torneo/torneos_lista.html" class="btn btn-light" target="controlador">Aceptar</a>
-                    </div>
+                   <h:form class="col-12 text-center pb-4">
+                        <h:commandLink action="html/usuarios/formularios/crear_usuario.html" class="btn btn-light" target="controlador" value="#{textSupp.realizarFormulario}"/>
+                    </h:form>
                 </div>
 
                 <!-- Espacio de modificar una torneos -->
