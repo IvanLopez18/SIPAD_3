@@ -12,12 +12,9 @@
 
             <h:outputLabel class="p-5" value="Botones para ir a los usuarios"/>
 
-            <div class="col-5 mx-auto">
-                <a href="app/supervisor/indexSupervisor.xhtml" class="btn btn-outline-dark p-1">
-                    Supervisor
-                </a>
-            </div>
-
+            <h:form class="col-5 mx-auto">
+                <h:commandLink value="#{textSupp.supervisor}" action="app/supervisor/indexSupervisor" class="btn btn-outline-dark"/>
+            </h:form>
         </div>
 
 
