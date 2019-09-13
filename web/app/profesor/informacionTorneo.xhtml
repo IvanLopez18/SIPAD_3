@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../../../css/animate.css"/>
+
+        <link rel="stylesheet" type="text/css" href="../../../css/all.css"/>
+        <!-- Estilos de datatable -->
+        <link rel="stylesheet" href="../../../datatable/css/dataTables.bootstrap4.min.css"/>
+        <link rel="stylesheet" href="../../../datatable/css/responsive.bootstrap4.min.css"/>
+        <link rel="stylesheet" href="../../../datatable/css/bootstrap.css"/>
+
+        <!-- Estilos propios -->
+        <link rel="stylesheet" href="../../../css/estilos.css"/>
+    </head>
+    <body>
+        <!-- Contenedor de toda la informacion y interaccion -->
+        <div class="container w-100 pr-3 pl-3 pb-3 container">
+
+            <!-- Encavezado -->
+            <header class="row p-1">
+
+                <!-- Nombre de la academia deportiva -->
+                <div class="col-12 pl-4 justify-content-center">
+                    <!-- Logo de la academia -->
+                    <div class="h-100 justify-content-center">
+                        <div class="h-100 logo">
+                        </div>	
+                        <h2 class="col-12 d-md-none">Bocaneiros</h2>
+                        <h2 class="col-12 d-none d-md-block">Academia Deportiva Bocaneiros</h2>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- Navegacion	 -->
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
+
+                <!-- Boton de moviles -->
+                <h:form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                </h:form>
+                <!-- Botones de pantalla grande -->
+                <div class="collapse navbar-collapse" id="navegador">
+
+                    <!-- Botones de paginas -->
+                    <ul class="nav mr-auto">
+
+                        <h:form class="nav mr-auto">
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link" value="#{lenguajeEdit.perfil}" action="indexProfesor" >   <i class="fas fa-user-alt"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link" value="#{lenguajeEdit.alumnos}" action="alumnosProfesor" >  <i class="fas fa-users"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link actual" value="#{lenguajeEdit.torneos}" action="torneoProfesor" >   <i class="fas fa-trophy"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link" value="#{lenguajeEdit.eventos}" action="eventoProfesor" > <i class="far fa-laugh-beam"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link" value="#{lenguajeEdit.horario}" action="horarioProfesor" >  <i class="fas fa-calendar-check"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item active">
+                                <h:commandLink class="nav-link" value="#{lenguajeEdit.notificacion}" action="notificacionProfesor" >   <i class="fas fa-bell"></i>
+                                </h:commandLink>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="fas fa-sign-out-alt"></i> #{lenguajeEdit.cerrarSesion}
+                                </a>    
+                            </li>
+                        </h:form>
+                    </ul>
+
+
+                    <h:form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="#{lenguajeEdit.buscar}." aria-label="Search"/>
+                        <h:commandLink class="btn btn-success my-2 my-sm-0 " type="submit">
+                            <i class="fas fa-search"></i>
+                        </h:commandLink>
+                    </h:form>
+
+                </div>
+
+            </nav>
+
+            <!-- Informaion del torneo -->
+            <div class="row">
+
+                <h1 class="col-12 text-success text-center">
+                    Informacion del torneo
+                </h1>
+
+                <div class="card mb-3 p-3 col-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../../resources/images/logo_torneo.jpg" class="card-img" alt="..."/>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del torneo: </h5>
+                                <p class="card-text">Blue Cut</p>
+                                <h5 class="card-title">Organizador: </h5>
+                                <p class="card-text">S.O.S.T</p>
+                                <h5 class="card-title">Categoria deportiva: </h5>
+                                <p class="card-text">Futbol</p>
+                                <h5 class="card-title">Nivel de la categoria deportiva: </h5>
+                                <p class="card-text">Juvenil</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Dirección de la organizacion: </h5>
+                                <p class="card-text">Transversal 63 #68-09 Sur</p>
+                                <h5 class="card-title">Fecha de inicio: </h5>
+                                <p class="card-text">25/02/2018</p>
+                                <h5 class="card-title">Fecha de fin : </h5>
+                                <p class="card-text">25/05/2018</p>
+                                <h5 class="card-title">Estado del torneo: </h5>
+                                <p class="card-text">Terminado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipos que participan en el torneo -->
+                <h2 class="col-12 text-success text-center">
+                    Deportistas que participaron en el torneo
+                </h2>
+
+                <div class="card mb-3 p-3 col-12">
+                    <table id="asistencia" class="table table-striped table-bordered dt-responsive nowrap w-100">
+                        <thead>
+                            <tr>
+                                <th>Documento</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Dorsal</th>
+                                <th>Posicion</th>
+                                <th>Goles</th>
+                                <th>Asistencias</th>
+                                <th>Tarjeta roja</th>
+                                <th>Tarjeta amarilla</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                            <tr>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Dorsal</td>
+                                <td>Posicion</td>
+                                <td>Goles</td>
+                                <td>Asistencias</td>
+                                <td>Tarjeta roja</td>
+                                <td>Tarjeta amarilla</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- *******************Fin de las fichas********************** -->
+            </div>
+
+        </div>
+
+        <!-- **************** Pîe de pagina **************** -->
+        <footer>
+
+        </footer>
+
+
+        <!-- Fin del contenedor de toda la informacion -->
+
+
+
+
+
+        <script src="../../../js/jquery-3.4.1.min.js"></script>
+        <script src="../../../js/popper.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+
+        <script src="../../../datatable/js/jquery-3.3.1.js"></script>
+        <script src="../../../datatable/js/jquery.dataTables.min.js"></script>
+        <script src="../../../datatable/js/dataTables.bootstrap4.min.js"></script>
+        <script src="../../../datatable/js/dataTables.responsive.min.js"></script>
+        <script src="../../../datatable/js/responsive.bootstrap4.min.js"></script>
+
+        <script src="../../../datatable/js/activartabla.js"></script>
+        <script src="../../js/sweetalert2@8.js"></script>
+    </body>
+</html>
