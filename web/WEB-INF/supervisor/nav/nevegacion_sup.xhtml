@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      >
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    
+    <h:body>
+        
+        <!-- Barra de navegacion -->
+        <ul class="nav nav-pills botones mt-4">
+
+            <!--Boton Usuarios -->
+            <li class="nav-item dropdown">
+                <a class="btn btn-info mr-5" data-toggle="dropdown" href="#" role="button">
+                    <img src="../../resources/images/images_sup/Usuarios.png" alt=""/>
+                </a>
+                <!-- Menu desplegable -->
+                <h:form class="dropdown-menu">
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
+                </h:form>
+            </li>
+
+            <!--Boton Categorias deportivas  -->	
+            <li class="nav-item dropdown">
+                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                    <img src="../../resources/images/images_sup/Categorias.png" alt=""/>
+                </a>
+
+                <!-- Menu desplegable -->
+                <h:form class="dropdown-menu">
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
+                </h:form>
+            </li>
+
+            <!-- Boton Torneos -->	
+            <li class="nav-item dropdown">
+                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                    <img src="../../resources/images/images_sup/Torneos.png" alt=""/>
+                </a>
+
+                <!-- Menu desplegable -->
+                <h:form class="dropdown-menu">
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
+                </h:form>
+            </li>	
+
+            <!-- Boton Calendario -->
+            <li class="nav-item dropdown">
+                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                    <img src="../../resources/images/images_sup/Calendario.png" alt=""/>
+                </a>
+
+                <!-- Menu desplegable -->
+                <h:form class="dropdown-menu">
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
+                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
+                </h:form>
+
+            </li>
+
+            <!-- Boton Reportes -->
+            <li class="nav-item dropdown">
+                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                    <img src="../../resources/images/images_sup/Reportes.png" alt=""/>
+                </a>
+                <!-- Menu desplegable -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item nav-ani" href="#">Generar reporte</a>
+                </div>
+            </li>
+        </ul>
+    </h:body>
+    
+</html>
