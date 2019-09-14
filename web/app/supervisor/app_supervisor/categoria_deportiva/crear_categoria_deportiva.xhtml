@@ -22,12 +22,22 @@ and open the template in the editor.
     </h:head>
 
     <h:body>
-
+        
+        <!-- Encabezado -->
+        <header>
+            
+            <h:form>
+                <h:commandLink value="#{textSupp.SIPAD}" action="../../indexSupersivor"/>
+            </h:form>
+            
+        </header>
+        
         <!-- NAVEGADOR -->
         <ui:include src="../../../../WEB-INF/supervisor/nav/nevegacion_sup.xhtml"/>
 
-        <!-- Formulario de creacion de categoria deportiva-->
-        <div class="container h-100">
+        <!-- Formulario de creacion de categoria deportiva -->
+        <div class="container w-75 mt-5">
+            
             <div class="row">
                 <h1 class="col-12 pl-4 mt-2 mb-1">
                     Formulario de creación de categoria deportiva
@@ -36,29 +46,16 @@ and open the template in the editor.
 
             <h:form class="p-3">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nombre de la categoria deportiva</label>
-                    <input type="text" class="form-control" id="nombreCD" aria-describedby="emailHelp" placeholder="Nombre de la categoria deportiva" required/>
+                    <h:outputLabel value="Nombre de la categoria deportiva" for="exampleInputEmail1"/>
+                    <h:inputText class="form-control" id="nombreCD" required="true"/>
+                    <h:message for="nombreCD"/>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Cupos de la categoria deportiva</label>
-                    <input type="text" class="form-control" id="cuposCD" aria-describedby="emailHelp" placeholder="Cuantos deportistas puede tener la categoria deportiva" required/>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Genero</label>
-                    <input type="text" class="form-control" id="generoCD" aria-describedby="emailHelp" placeholder="Cuantos deportistas puede tener la categoria deportiva" required/>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Nivel</label>
-                    <input type="text" class="form-control" id="nivelCD" aria-describedby="emailHelp" placeholder="Cuantos deportistas puede tener la categoria deportiva" required/>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Edad minima del deportista</label>
-                    <input type="text" class="form-control" id="edadCD" aria-describedby="emailHelp" placeholder="Cuantos deportistas puede tener la categoria deportiva" required/>
-                </div>
+               
                 <div class="row">
                     <h:commandButton value="#{textSupp.crear}" class="btn btn-primary col-3 mx-auto" onclick="crearCD()"/>
                 </div>
             </h:form>
+            
         </div>
 
 
