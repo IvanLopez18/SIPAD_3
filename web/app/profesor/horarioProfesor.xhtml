@@ -45,12 +45,13 @@ and open the template in the editor.
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
 
                 <!-- Boton de moviles -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h:form>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
 
-                </button>
-
+                    </button>
+                </h:form>
                 <!-- Botones de pantalla grande -->
                 <div class="collapse navbar-collapse" id="navegador">
 
@@ -137,10 +138,11 @@ and open the template in the editor.
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="tituloEvent"></h5>
+                        <h:form>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"> &times;</span>
+
                             </button>
-                    
+                        </h:form>
                     </div>
                     <div class="modal-body">
                         <div id="descripcionEvent"></div>
@@ -162,7 +164,7 @@ and open the template in the editor.
                     <div class="modal-header">
                         <h5 class="modal-title" id="tituloEvent"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+
                         </button>
                     </div>
                     <div class="modal-body">
@@ -183,7 +185,7 @@ and open the template in the editor.
                     <div class="modal-header">
                         <h5 class="modal-title" id="titulo">Nuevo evento</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+
                         </button>
                     </div>
                     <div class="modal-body">
@@ -231,7 +233,7 @@ and open the template in the editor.
                     </div>
 
                     <div class="modal-footer mx-center justify-content-center">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                         <button type="button" class="btn btn-success" id="btnguardar">Guardar</button>
                     </div>
                 </div>
@@ -251,6 +253,7 @@ and open the template in the editor.
         <!-- Activar el calendario -->
         <script src="../../resources/fullCalendar/js/activar_calendario.js" type="text/javascript"></script>
         <script src="../../resources/fulCalendar/js/activar_calendario.js" type="text/javascript"></script>
+
         <!-- *****************Fin JavaScript************** -->
     </body>
 </html>
