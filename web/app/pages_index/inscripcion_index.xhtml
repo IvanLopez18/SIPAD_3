@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <title>Inscripción</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="../../resources/css/all.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/estilos.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+
+    <h:body>
+
+        <!-- Contenedor de toda la informacion y interaccion -->
+        <div class="w-100 pr-3 pl-3 pb-3">
+
+            <!-- Encavezado -->
+            <header class="row p-1">
+
+                <!-- Nombre de la academia deportiva -->
+                <div class="col-12 pl-4 justify-content-center">
+                    <!-- Logo de la academia -->
+                    <div class="h-100 justify-content-center">
+                        <div class="h-100 logo">
+                        </div>	
+                        <h2 class="col-12 pt-3 text-center d-md-none">Bocaneiros</h2>
+                        <h2 class="col-12 pt-3 d-none d-md-block text-center">Academia Deportiva Bocaneiros</h2>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- Navegacion	 -->
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
+
+                <!-- Boton de moviles -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Botones de pantalla grande -->
+                <div class="collapse navbar-collapse" id="navegador">
+
+                    <!-- Botones de paginas -->
+                    <ul class="nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../../index.xhtml"><i class="fas fa-home"></i> Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneo_index.xhtml"><i class="fas fa-trophy"></i> Torneos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="categoriaDeportiva_index.xhtml"><i class="fas fa-futbol"></i> Categoria deportiva </a>
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="nav-link actual" href="Incripciones_index.xhtml">
+                                <i class="fas fa-file-signature"></i> Inscripciónes
+                            </a>    
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos_index.xhtml"><i class="fas fa-laugh"></i> Eventos </a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-key"></i> Ingresar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" data-toggle="modal" href="#iniciar">
+                                    Iniciar sesion
+                                </a>
+
+                                <a class="dropdown-item" data-toggle="modal" href="../inscripcion/inscripcion.html" onclick="registro()">
+                                    Registrarse
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" href="#cambiar_pass">
+                                    Olvide  mi contraseña
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                    </form>
+
+                </div>
+
+            </nav>
+            <!-- Fin de la barra de navegacion y encabezado -->
+
+            <!-- Titulo de la pagina -->
+            <div class="bd-example row">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../resources/images/Inscripciones.jpg" class="d-block w-100" alt="..."/>
+                                <div class="carousel-caption d-none d-md-block w-75 h-100 pt-5">
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Fichas con los torneos actuales -->
+
+            <!-- Nota para el usuario -->
+            <h2 class="row justify-content-center bg-success">
+                <div>
+                    <p class="small col-12 text-justify">"Seleccione la categoria deportiva a la que deseas inscribirse"</p>
+                </div>
+            </h2>
+
+            <!-- Fichas de categorias deportivas -->
+            <div class="row">
+
+                <!-- Ficha de inscripcion futbol -->
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-ficha espF">
+                        <img src="../../resources/images/FUTBOL.jpg" class="card-img-top" alt="..."/>
+                            <div class="card-body">
+
+                                <h5 class="card-title">Inscripciònes a Futbol</h5>
+
+                                <p class="card-text">
+
+                                </p>
+
+                                <a href="inscripcion_futbol.html" class="btn btn-success float-right">Inscribirse</a>
+
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Ficha de inscripcion futbol -->
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-ficha espF">
+                        <img src="../../resources/images/PORRAS1.jpg" class="card-img-top" alt="..."/>
+                            <div class="card-body">
+
+                                <h5 class="card-title">Inscripciònes a Porras</h5>
+
+                                <p class="card-text">
+
+                                </p>
+
+                                <a href="inscripcion_porras.html" class="btn btn-success float-right">Inscribirse</a>
+
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Ficha de Teakwondo  -->
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-ficha espF">
+                        <img src="../../resources/images/TAEKWONDO1.jpg" class="card-img-top" alt="..."/>
+                            <div class="card-body">
+
+                                <h5 class="card-title">Inscripciònes a Teakwondo</h5>
+
+                                <p class="card-text">
+
+                                </p>
+
+                                <a href="inscripcion_tekwondo.html" class="btn btn-success float-right">Inscribirse</a>
+
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nota para el usuario -->
+            <h2 class="row justify-content-center bg-danger mt-4">
+                <div>
+                    <p class="small col-12 text-justify">"Solo puedes estar inscrito a una categoria deportiva a la vez"</p>
+                </div>
+            </h2>
+
+        </div>
+        <!-- ************ Fin del contenedor ********** -->
+
+        <!-- ************** Formulario ************* -->
+        <!-- formulario de iniciar sesion -->
+        <div class="modal fade" id="iniciar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="row">
+                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">iniciar sesion</h4>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <form class="modal-body">
+
+                        <div class="p-1 pl-3 pr-3" action="POST">
+                            <div class="form-group row">
+                                <label for="exampleFormControlSelect1">Seleciona el tipo de usuario</label>
+                                <select class="form-control" id="tipo_user">
+                                    <option>...</option>
+                                    <option>Estudiante</option>
+                                    <option>Profesor</option>
+                                    <option>Supervisor</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputEmail1">Documento</label>
+                                <input type="" class="form-control" id="usuario" placeholder="Digite su numero de doumento" pattern="[a-zA-Z]{5,10}"  required=""/>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="pass" placeholder="Password" pattern="[A-Za-z0-9]{5,9}" required=""/>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="acepta"/>
+                                        <label class="form-check-label" for="gridCheck">
+                                            Recordar mi cuenta
+                                        </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary col-3" onclick="iniciar1()">Enviar</button>
+                            </div>	
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de cambio de contraseña -->
+        <div class="modal fade" id="cambiar_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="row">
+                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">Cambio de contraseña</h4>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <form class="modal-body">
+
+                        <div class="p-1 pl-3 pr-3" action="POST">
+                            <div class="form-group row">
+                                <div class="mb-3 col-12">
+                                    <label for="validationTextarea">Email</label>
+                                    <input type="email" class="form-control col-12" id="correo" aria-describedby="emailHelp" placeholder="Ingrese el correo con el que se registro" pattern="\w.%+@[\w.-]+\-[a-zA-Z]{2,4}"  required=""/>
+                                        <div class="invalid-feedback">
+                                            Falta el RH del usuario, ejemplo A+.
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary col-3" onclick="cambiar_contra()">Enviar</button>
+                            </div>	
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ************* Fin formularios *********** -->
+
+        <!-- ********************** JavaScript ************************* -->
+        <script src="../../resources/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/popper.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/sweetalert2@8.js" type="text/javascript"></script>
+        <script src="../../resources/js/all.min.js" type="text/javascript"></script>
+        <!-- ************************************************************* -->
+
+        </h:body>
+
+</html>
