@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"    
       >
-    <h:head>
+    <head>
         <title>TODO supply a title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </h:head>
-
-    <h:body>
-
+    </head>
+    <body>
         <!-- Barra de navegacion -->
         <ul class="nav nav-pills botones mt-4">
 
@@ -38,7 +42,7 @@
                 <!-- Menu desplegable -->
                 <h:form class="dropdown-menu">
                     <h:commandLink class="dropdown-item nav-ani" 
-                                   action="app_supervisor/categoria_deportiva/crear_categoria_deportiva" 
+                                   action="../categoria_deportiva/crear_categoria_deportiva" 
                                    value="#{textSupp.crear}"/>
                     <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
                     <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
@@ -90,6 +94,5 @@
                 </div>
             </li>
         </ul>
-    </h:body>
-
+    </body>
 </html>
