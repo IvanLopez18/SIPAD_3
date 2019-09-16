@@ -50,7 +50,7 @@
                     <!-- Botones de paginas -->
                     <ul class="nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link actual" href="#"><i class="fas fa-home"></i>#{indexTextEdit.inicio}<span class="sr-only">(current)</span></a>
+                            <a class="nav-link actual" href="nav_inicio"><i class="fas fa-home"></i>#{indexTextEdit.inicio}<span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item">
@@ -58,7 +58,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="si/html/categoriaDeportiva/categoriasDeportivas.html"><i class="fas fa-futbol"></i>#{indexTextEdit.categoriaDeportiva} </a>
+                            <a class="nav-link" href="nav_categoria_deportiva"><i class="fas fa-futbol"></i>#{indexTextEdit.categoriaDeportiva} </a>
                         </li> 
 
                         <li class="nav-item dropdown ">
@@ -99,7 +99,7 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar.." aria-label="Search"/>
+                        <input class="form-control mr-sm-2" type="search" placeholder="#{indexTextEdit.buscar}" aria-label="Search"/>
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
@@ -133,13 +133,13 @@
 
                             <div class="row pt-5 justify-content-center">
                                 <a href="si/html/inscripcion/inscripcion.html" class="nav-link bg-success col-4 text-white br-10">
-                                    <h3 class="d-none d-sm-block">#{indexTextEdit.informacion}</h3>
-                                    <h5 class="d-sm-none">Inscripciones</h5>
+                                    <h3 class="d-none d-sm-block">#{indexTextEdit.inscrpiciones}</h3>
+                                    <h5 class="d-sm-none">#{indexTextEdit.inscrpiciones}</h5>
                                 </a>
                                 <p class="col-1"></p>
                                 <a href="si/paginaError404.html" class="nav-link bg-light col-4 text-dark br-10">
-                                    <h3 class="d-none d-sm-block">Información</h3>
-                                    <h5 class="d-sm-none">Información</h5>
+                                    <h3 class="d-none d-sm-block">#{indexTextEdit.informacion}</h3>
+                                    <h5 class="d-sm-none">#{indexTextEdit.informacion}</h5>
                                 </a>
                             </div>
                         </div>
@@ -151,21 +151,21 @@
                         <img src="resources/images/fondo-futbol.jpg" class="d-block w-100 imgP" alt="..."/>
 
                         <div class="carousel-caption h-100 w-75  pt-5 transi">
-                            <h1 class="pb-3 pt-4">Grandiosos deportes</h1>
-                            <p class="d-none d-lg-block">Inscribete a los diferentes categorias deportiva para ser parte de esta gran familia.</p>
+                            <h1 class="pb-3 pt-4">#{indexTextEdit.grandiososDeportes}</h1>
+                            <p class="d-none d-lg-block">#{indexTextEdit.comentario1}</p>
 
                             <div class="row d-none d-md-block mt-5 pt-4"></div>
                             <div class="row d-none d-md-block mt-5 pt-4"></div>
 
                             <div class="row pt-5 justify-content-center">
                                 <a href="si/html/inscripcion/inscripcion.html" class="nav-link bg-success col-4 text-white br-10">
-                                    <h3 class="d-none d-sm-block">Inscripciones</h3>
-                                    <h5 class="d-sm-none">Inscripciones</h5>
+                                    <h3 class="d-none d-sm-block">#{indexTextEdit.inscrpiciones}</h3>
+                                    <h5 class="d-sm-none">#{indexTextEdit.inscrpiciones}</h5>
                                 </a>
                                 <p class="col-1"></p>
                                 <a href="si/paginaError404.html" class="nav-link bg-light col-4 text-dark br-10">
-                                    <h3 class="d-none d-sm-block">Información</h3>
-                                    <h5 class="d-sm-none">Información</h5>
+                                    <h3 class="d-none d-sm-block">#{indexTextEdit.informacion}</h3>
+                                    <h5 class="d-sm-none">#{indexTextEdit.informacion}</h5>
                                 </a>
                             </div>
                         </div>
@@ -195,9 +195,9 @@
                     <div class="card bg-light espF">
                         <img src="resources/images/TAEKWONDO1.jpg" class="card-img-top" alt="..."/>
                         <div class="card-body">
-                            <h5 class="card-title">Categoria deportiva</h5>
-                            <p class="card-text">Actualmente contamos con tres deportes los cueles son el futbol, porras y taekwondo. </p>
-                            <a href="si/html/categoriaDeportiva/categoriasDeportivas.html" class="btn btn-primary">Mas informacion</a>
+                            <h5 class="card-title">#{indexTextEdit.categoriaDeportiva}</h5>
+                            <p class="card-text">#{indexTextEdit.comentario2} </p>
+                            <a href="si/html/categoriaDeportiva/categoriasDeportivas.html" class="btn btn-primary">#{indexTextEdit.masInfo}</a>
                         </div>
                     </div>
                 </div>
@@ -207,11 +207,11 @@
                     <div class="card bg-light espF">
                         <img src="resources/images/FUTBOL.jpg" class="card-img-top" alt="..."/>
                         <div class="card-body">
-                            <h5 class="card-title">Torneos</h5>
+                            <h5 class="card-title">#{indexTextEdit.torneos}</h5>
                             <p class="card-text"> 
-                                Te presentamos los diferentes torneos en los que la Academia Bocaneiros esta participando. 
+                                #{indexTextEdit.comentario3}
                             </p>
-                            <a href="si/html/torneo/torneos.html" class="btn btn-primary">Mas informacon</a>
+                            <a href="si/html/torneo/torneos.html" class="btn btn-primary">#{indexTextEdit.masInfo}</a>
                         </div>
                     </div>
                 </div>
@@ -221,11 +221,11 @@
                     <div class="card bg-light espF">
                         <img src="resources/images/TAEKWONDO2.jpg" class="card-img-top" alt="..."/>
                         <div class="card-body">
-                            <h5 class="card-title">¿Quienes somos?</h5>
+                            <h5 class="card-title">#{indexTextEdit.quienesSomos}</h5>
                             <p class="card-text">
-                                Conozca mas sobre nosotros, cual es nuestro propocito con los jovenes.
+                                #{indexTextEdit.comentario4}
                             </p>
-                            <a href="si/paginaError404.html" class="btn btn-primary">Mas infromacion</a>
+                            <a href="si/paginaError404.html" class="btn btn-primary">#{indexTextEdit.masInfo}</a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="row">
-                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">iniciar sesion</h4>
+                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">#{indexTextEdit.iniciarSesion}</h4>
                         </div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"></span>
@@ -260,32 +260,32 @@
 
                         <div class="p-1 pl-3 pr-3" action="POST">
                             <div class="form-group row">
-                                <label for="exampleFormControlSelect1">Seleciona el tipo de usuario</label>
+                                <label for="exampleFormControlSelect1">#{indexTextEdit.seleccionUsuario}</label>
                                 <select class="form-control" id="tipo_user">
                                     <option>...</option>
-                                    <option>Estudiante</option>
-                                    <option>Profesor</option>
-                                    <option>Supervisor</option>
+                                    <option>#{indexTextEdit.estudiante}</option>
+                                    <option>#{indexTextEdit.profesor}</option>
+                                    <option>#{indexTextEdit.supervisor}</option>
                                 </select>
                             </div>
                             <div class="form-group row">
-                                <label for="exampleInputEmail1">Documento</label>
-                                <input type="" class="form-control" id="usuario" placeholder="Digite su numero de doumento" pattern="[a-zA-Z]{5,10}"  required=""/>
+                                <label for="exampleInputEmail1">#{indexTextEdit.documento}</label>
+                                <input type="" class="form-control" id="usuario" placeholder="#{indexTextEdit.placeHolderDocumento}" pattern="[a-zA-Z]{5,10}"  required=""/>
                             </div>
                             <div class="form-group row">
-                                <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Password" pattern="[A-Za-z0-9]{5,9}" required=""/>
+                                <label for="exampleInputPassword1">#{indexTextEdit.contraseña}</label>
+                                <input type="password" class="form-control" id="pass" placeholder="#{indexTextEdit.placeHolderContraseña}" pattern="[A-Za-z0-9]{5,9}" required=""/>
                             </div>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="acepta"/>
                                     <label class="form-check-label" for="gridCheck">
-                                        Recordar mi cuenta
+                                        #{indexTextEdit.recordarCuenta}
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button type="button" class="btn btn-primary col-3" onclick="iniciar()">Enviar</button>
+                                <button type="button" class="btn btn-primary col-3" onclick="iniciar()">#{indexTextEdit.enviar}</button>
                             </div>	
                         </div>
 
@@ -301,7 +301,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="row">
-                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">Cambio de contraseña</h4>
+                            <h4 class="modal-title col-12 text-center" id="exampleModalLabel">#{indexTextEdit.cambioContraseña}</h4>
                         </div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"></span>
@@ -312,15 +312,15 @@
                         <div class="p-1 pl-3 pr-3" action="POST">
                             <div class="form-group row">
                                 <div class="mb-3 col-12">
-                                    <label for="validationTextarea">Email</label>
-                                    <input type="email" class="form-control col-12" id="correo" aria-describedby="emailHelp" placeholder="Ingrese el correo con el que se registro" pattern="\w.%+@[\w.-]+\-[a-zA-Z]{2,4}"  required=""/>
+                                    <label for="validationTextarea">#{indexTextEdit.correo}</label>
+                                    <input type="email" class="form-control col-12" id="correo" aria-describedby="emailHelp" placeholder="#{indexTextEdit.ingresarCorreoregistro}" pattern="\w.%+@[\w.-]+\-[a-zA-Z]{2,4}"  required=""/>
                                     <div class="invalid-feedback">
-                                        Falta el RH del usuario, ejemplo A+.
+                                        #{indexTextEdit.faltaRh}
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button type="button" class="btn btn-primary col-3" onclick="cambiar_contra()">Enviar</button>
+                                <button type="button" class="btn btn-primary col-3" onclick="cambiar_contra()">#{indexTextEdit.enviar}</button>
                             </div>	
                         </div>
 
