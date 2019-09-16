@@ -21,6 +21,7 @@ and open the template in the editor.
         <!-- Estilos propios -->
         <link href="../../resources/css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
+    <f:view locale="en">
     <body>
         <!-- Contenedor de toda la informacion y interaccion -->
         <div class="container w-100 pr-3 pl-3 pb-3 container">
@@ -35,7 +36,7 @@ and open the template in the editor.
                         <div class="h-100 logo">
                         </div>	
                         <h2 class="col-12 d-md-none">Bocaneiros</h2>
-                        <h2 class="col-12 d-none d-md-block">Academia Deportiva Bocaneiros</h2>
+                        <h2 class="col-12 d-none d-md-block">#{lenguajeEdit.academiaDeportivaBocaneiros}</h2>
                     </div>
                 </div>
 
@@ -84,7 +85,7 @@ and open the template in the editor.
                                 </h:commandLink>
                             </li>
                             <li class="nav-item dropdown ">
-                                <a class="nav-link" href="../index.html">
+                                <a class="nav-link" href="../../index.xhtml">
                                     <i class="fas fa-sign-out-alt"></i> #{lenguajeEdit.cerrarSesion}
                                 </a>    
                             </li>
@@ -107,7 +108,7 @@ and open the template in the editor.
             <div class="row">
 
                 <h1 class="col-12 pt-2 text-dark text-center pb-3">
-                    Horario de entrenamiento y reuniones
+                    #{lenguajeEdit.tituloHorario}
                 </h1>
 
 
@@ -171,7 +172,7 @@ and open the template in the editor.
                         <div id="descripcionEvent"></div>
                     </div>
                     <div class="modal-footer mx-center justify-content-center">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">#{lenguajeEdit.cerrar}</button>
                     </div>
                 </div>
             </div>
@@ -183,7 +184,7 @@ and open the template in the editor.
             <form class="was-validated modal-dialog" role="document">
                 <div class="modal-content bg-secondary text-light">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="titulo">Nuevo evento</h5>
+                        <h5 class="modal-title" id="titulo">#{lenguajeEdit.nuevoEvento}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
                         </button>
@@ -191,50 +192,50 @@ and open the template in the editor.
                     <div class="modal-body">
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Titulo del evento</label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.nombreEvento}</label>
                             <input type="text" class="form-control" id="txttitulo" placeholder="Nombre del evento" required=""/>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Fecha de inicio</label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.fechaInicio}</label>
                             <input type="date" class="form-control" id="txtfecha_inicio" aria-describedby="emailHelp" placeholder="Fecha del evento" required=""/>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Fecha de fin</label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.fechaFin}</label>
                             <input type="date" class="form-control" id="txtfecha_fin" aria-describedby="emailHelp" placeholder="Fecha del evento" required=""/>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Hora de inicio</label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.horaInicio}</label>
                             <input type="time" class="form-control" id="txthora" aria-describedby="emailHelp" placeholder="Enter email" value="10:00" required=""/>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Hora de que se termina</label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.horaFin}</label>
                             <input type="time" class="form-control" id="txthora_fin" aria-describedby="emailHelp" placeholder="Enter email" value="10:00" required=""/>
                         </div>
 
                         <div class="mb-3">
-                            <label for="validationTextarea">Descripcion del evento</label>
+                            <label for="validationTextarea">#{lenguajeEdit.descripcionEvento}</label>
                             <textarea class="form-control is-invalid" id="txtdescripcon_event" placeholder="Required example textarea"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Color del marco del evento: </label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.colorMarcoEvento} </label>
                             <input type="color"  id="txtcolor" placeholder="color del evento" value="#0000FF"/>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Color de la letra del evento: </label>
+                            <label for="exampleInputEmail1">#{lenguajeEdit.colorTextoEvento}</label>
                             <input type="color"  id="text_color" placeholder="color del evento" value="#FFFFFF"/>
                         </div>
 
                     </div>
 
                     <div class="modal-footer mx-center justify-content-center">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-success" id="btnguardar">Guardar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">#{lenguajeEdit.cerrar}</button>
+                        <button type="button" class="btn btn-success" id="btnguardar">#{lenguajeEdit.guardar}</button>
                     </div>
                 </div>
             </form>
@@ -256,4 +257,5 @@ and open the template in the editor.
 
         <!-- *****************Fin JavaScript************** -->
     </body>
+    </f:view>
 </html>
