@@ -34,7 +34,12 @@
             
         </resource-bundle>
         
+        <!--Cambio de lenguaje para el index principal de la pagina-->
         
+        <resource-bundle>
+            <base-name>sipad.languages.indexPrincipal</base-name>
+            <var>indexTextEdit</var>
+        </resource-bundle>
         
     </application>
 
