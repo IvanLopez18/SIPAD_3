@@ -15,84 +15,90 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body>
-        <!-- Barra de navegacion -->
-        <ul class="nav nav-pills botones mt-4">
+    <f:view locale="es">
 
-            <!--Boton Usuarios -->
-            <li class="nav-item dropdown">
-                <a class="btn btn-info mr-5" data-toggle="dropdown" href="#" role="button">
-                    <img src="../../resources/images/images_sup/Usuarios.png" alt=""/>
-                </a>
-                <!-- Menu desplegable -->
-                <h:form class="dropdown-menu">
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
-                </h:form>
-            </li>
+        <h:body>
 
-            <!--Boton Categorias deportivas  -->	
-            <li class="nav-item dropdown">
-                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
-                    <img src="../../resources/images/images_sup/Categorias.png" alt=""/>
-                </a>
+            <a href="../../indexSup.xhtml">Inicio</a>
 
-                <!-- Menu desplegable -->
-                <h:form class="dropdown-menu">
-                    <h:commandLink class="dropdown-item nav-ani" 
-                                   action="../categoria_deportiva/crear_categoria_deportiva" 
-                                   value="#{textSupp.crear}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
-                </h:form>
-            </li>
+            <!-- Barra de navegacion -->
+            <ul class="nav nav-pills botones mt-4">
 
-            <!-- Boton Torneos -->	
-            <li class="nav-item dropdown">
-                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
-                    <img src="../../resources/images/images_sup/Torneos.png" alt=""/>
-                </a>
+                <!--Boton Usuarios -->
+                <li class="nav-item dropdown">
+                    <a class="btn btn-info mr-5" data-toggle="dropdown" href="#" role="button">
+                        <img src="../../../../resources/images/images_sup/Usuarios.png" alt=""/>
+                    </a>
+                    <!-- Menu desplegable -->
+                    <h:form class="dropdown-menu">
+                        <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.consultar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.modificar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.eliminar}</a>
+                    </h:form>
+                </li>
 
-                <!-- Menu desplegable -->
-                <h:form class="dropdown-menu">
-                    <h:commandLink class="dropdown-item nav-ani" 
-                                   action="app_supervisor/torneos/crear_torneos"  
-                                   value="#{textSupp.crear}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
-                </h:form>
-            </li>	
+                <!--Boton Categorias deportivas  -->	
+                <li class="nav-item dropdown">
+                    <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                        <img src="../../../../resources/images/images_sup/Categorias.png" alt=""/>
+                    </a>
 
-            <!-- Boton Calendario -->
-            <li class="nav-item dropdown">
-                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
-                    <img src="../../resources/images/images_sup/Calendario.png" alt=""/>
-                </a>
+                    <!-- Menu desplegable -->
+                    <h:form class="dropdown-menu">
+                        <a class="dropdown-item nav-ani" 
+                           href="../categoria_deportiva/crear_categoria_deportiva.xhtml"  
+                           >#{textSupp.crear}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.consultar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.modificar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.eliminar}</a>
+                    </h:form>
+                </li>
 
-                <!-- Menu desplegable -->
-                <h:form class="dropdown-menu">
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.consultar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.modificar}"/>
-                    <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.eliminar}"/>
-                </h:form>
+                <!-- Boton Torneos -->	
+                <li class="nav-item dropdown">
+                    <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                        <img src="../../../../resources/images/images_sup/Torneos.png" alt=""/>
+                    </a>
 
-            </li>
+                    <!-- Menu desplegable -->
+                    <h:form class="dropdown-menu">
+                        <a class="dropdown-item nav-ani" 
+                           href="../torneos/crear_torneos.xhtml"  
+                           >#{textSupp.crear}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.consultar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.modificar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.eliminar}</a>
+                    </h:form>
+                </li>	
 
-            <!-- Boton Reportes -->
-            <li class="nav-item dropdown">
-                <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
-                    <img src="../../resources/images/images_sup/Reportes.png" alt=""/>
-                </a>
-                <!-- Menu desplegable -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item nav-ani" href="#">Generar reporte</a>
-                </div>
-            </li>
-        </ul>
-    </body>
+                <!-- Boton Calendario -->
+                <li class="nav-item dropdown">
+                    <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                        <img src="../../../../resources/images/images_sup/Calendario.png" alt=""/>
+                    </a>
+
+                    <!-- Menu desplegable -->
+                    <h:form class="dropdown-menu">
+                        <h:commandLink class="dropdown-item nav-ani" action="#" value="#{textSupp.crear}"/>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.consultar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.modificar}</a>
+                        <a class="dropdown-item nav-ani" action="#">#{textSupp.eliminar}</a>
+                    </h:form>
+
+                </li>
+
+                <!-- Boton Reportes -->
+                <li class="nav-item dropdown">
+                    <a class="btn btn-info mr-5 ml-5" data-toggle="dropdown" href="#" role="button">
+                        <img src="../../../../resources/images/images_sup/Reportes.png" alt=""/>
+                    </a>
+                    <!-- Menu desplegable -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item nav-ani" href="#">Generar reporte</a>
+                    </div>
+                </li>
+            </ul>
+        </h:body>
+    </f:view>
 </html>
