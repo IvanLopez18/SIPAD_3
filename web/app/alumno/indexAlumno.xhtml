@@ -2,7 +2,8 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:head>
         <title>Academia Deportiva Bocaneiros - Deportista</title>
@@ -20,6 +21,7 @@
 
     </h:head>
 
+    <f:view locale="en">
     <h:body>		
 
         <!-- Contenedor de toda la informacion y interaccion -->
@@ -35,7 +37,7 @@
                         <div class="h-100 logo">
                         </div>	
                         <h2 class="col-12 d-md-none">Bocaneiros</h2>
-                        <h2 class="col-12 d-none d-md-block">Academia Deportiva Bocaneiros</h2>
+                        <h2 class="col-12 d-none d-md-block">#{lenguajeEdit.academiaDeportivaBocaneiros}</h2>
                     </div>
                 </div>
 
@@ -57,38 +59,38 @@
                     <!-- Botones de paginas -->
                     <ul class="nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link actual" href="#"><i class="fas fa-user-alt"></i> Perfil<span class="sr-only">(current)</span></a>
+                            <a class="nav-link actual" href="#"><i class="fas fa-user-alt"></i>#{alumnoLenguajeEdit.perfil}<span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/info_profesor.xhtml"><i class="fas fa-address-book"></i> Profesor </a>
+                            <a class="nav-link" href="pages/info_profesor.xhtml"><i class="fas fa-address-book"></i> #{alumnoLenguajeEdit.profesor}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/torneo_al.xhtml"><i class="fas fa-trophy"></i> Torneos </a>
+                            <a class="nav-link" href="pages/torneo_al.xhtml"><i class="fas fa-trophy"></i> #{alumnoLenguajeEdit.torneos}</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link " href="pages/evento_al.xhtml"><i class="fas fa-laugh"></i> Eventos </a>
+                            <a class="nav-link " href="pages/evento_al.xhtml"><i class="fas fa-laugh"></i> #{alumnoLenguajeEdit.eventos}</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/horario_al.xhtml"><i class="fas fa-calendar-alt"></i> Horario </a>
+                            <a class="nav-link" href="pages/horario_al.xhtml"><i class="fas fa-calendar-alt"></i> #{alumnoLenguajeEdit.horario} </a>
                         </li> 
                                 
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/notificacion_al.xhtml"><i class="fas fa-bell"></i> Notificación </a>
+                            <a class="nav-link" href="pages/notificacion_al.xhtml"><i class="fas fa-bell"></i> #{alumnoLenguajeEdit.notificacion}</a>
                         </li> 
                         
                         <li class="nav-item dropdown ">
                             <a class="nav-link" href="../../index.xhtml">
-                                <i class="fas fa-sign-out-alt"></i> Cerrar sesion
+                                <i class="fas fa-sign-out-alt"></i> #{alumnoLenguajeEdit.cerrarSesion}
                             </a>    
                         </li>
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar.." aria-label="Search"/>
+                        <input class="form-control mr-sm-2" type="search" placeholder="#{alumnoLenguajeEdit.buscar}" aria-label="Search"/>
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
@@ -102,7 +104,7 @@
             <div class="row">
 
                 <h1 class="col-12 text-success text-center">
-                    Perfil del deportista
+                    #{alumnoLenguajeEdit.perfilDeportista}
                 </h1>
 
                 <div class="card mb-3 p-3 col-12 fondo-prefil1" id="cambiar_fondo">
@@ -112,25 +114,25 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
-                                <h5 class="card-title">Nombre completo: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.nombre}</h5>
                                 <p class="card-text">Ivan Alexander Lopez</p>
-                                <h5 class="card-title">Documento: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.documento}</h5>
                                 <p class="card-text">1192802098</p>
-                                <h5 class="card-title">Categoria deportiva: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.categoriaDeportiva} </h5>
                                 <p class="card-text">Futbol</p>
-                                <h5 class="card-title">Nivel de la categoria deportiva: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.nivelCategoriaDeportiva} </h5>
                                 <p class="card-text">Juvenil</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
-                                <h5 class="card-title">Dirección: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.direccion} </h5>
                                 <p class="card-text">Calle 65 A sur f # 23-76</p>
-                                <h5 class="card-title">Fecha de nacimiento: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.fechaNacimiento}</h5>
                                 <p class="card-text">25/02/2002</p>
-                                <h5 class="card-title">Telefono: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.telefono}</h5>
                                 <p class="card-text">7152075</p>
-                                <h5 class="card-title">RH: </h5>
+                                <h5 class="card-title">#{alumnoLenguajeEdit.rh}</h5>
                                 <p class="card-text">A+</p>
                             </div>
                         </div>
@@ -142,10 +144,10 @@
                     <div class="row no-gutters w-100">
                         <div class="col-md-12 text-center">
                             <div class="card-body">
-                                <h3 class="card-title text-success">Descripción del deportista</h3>
-                                <p class="card-text">Tiene un buen rendimiento, sabe tapar y dar pases.</p>
-                                <p class="card-text">Se pone nervioso.</p>
-                                <p class="card-text"><small class="text-muted">Actualizado hace 10 min</small></p>
+                                <h3 class="card-title text-success">#{alumnoLenguajeEdit.descripcionDepor}</h3>
+                                <p class="card-text">#{alumnoLenguajeEdit.tieneUn}</p>
+                                <p class="card-text">#{alumnoLenguajeEdit.SePone}</p>
+                                <p class="card-text"><small class="text-muted">#{alumnoLenguajeEdit.actualizado1}</small></p>
                             </div>
                         </div>
                     </div>
@@ -156,17 +158,17 @@
                     <div class="row no-gutters">
                         <div class="col-md-12">
                             <div class="card-body">
-                                <h3 class="card-title text-center text-success p-2">Asistencia del deportista</h3>
-                                <p>Fecha de inicio: 22/02/2018</p>
+                                <h3 class="card-title text-center text-success p-2">#{alumnoLenguajeEdit.asistenciaDeportista}</h3>
+                                <p>#{alumnoLenguajeEdit.fechaInicio}</p>
                                 <!-- Tabla de asistencia del deportista -->
                                 <table id="asistencia" class="table table-striped table-bordered dt-responsive nowrap w-100">
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Fecha</th>
-                                            <th>Jornada</th>
-                                            <th>Motivo</th>
-                                            <th>Asistio</th>
+                                            <th>#{alumnoLenguajeEdit.fecha}</th>
+                                            <th>#{alumnoLenguajeEdit.jornada}</th>
+                                            <th>#{alumnoLenguajeEdit.motivo}</th>
+                                            <th>#{alumnoLenguajeEdit.asistio}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -225,19 +227,19 @@
                     <div class="row no-gutters">
                         <div class="col-md-12">
                             <div class="card-body">
-                                <h3 class="card-title text-center text-success p-2">Torneos en los que ha participado</h3>
+                                <h3 class="card-title text-center text-success p-2">#{alumnoLenguajeEdit.torneosParticipado}</h3>
                                 <!-- Tabla de asistencia del deportista -->
                                 <table id="torneos" class="table table-striped table-bordered dt-responsive nowrap w-100">
                                     <thead>
                                         <tr>
-                                            <th>Id_torneo</th>
-                                            <th>Nombre</th>
-                                            <th>Fecha de inicio</th>
-                                            <th>Fecha de fin</th>
-                                            <th>Nombre del equipo</th>
-                                            <th>Partidos jugados</th>
-                                            <th>Partidos ganados</th>
-                                            <th class="text-center">Ver torneo en detalle</th>
+                                            <th>#{alumnoLenguajeEdit.id_torneo}</th>
+                                            <th>#{alumnoLenguajeEdit.nombreTorneo}</th>
+                                            <th>#{alumnoLenguajeEdit.fechaInicioTorneo}</th>
+                                            <th>#{alumnoLenguajeEdit.fechaFinTorneo}</th>
+                                            <th>#{alumnoLenguajeEdit.nombreEquipo}</th>
+                                            <th>#{alumnoLenguajeEdit.partidosJugados}</th>
+                                            <th>#{alumnoLenguajeEdit.partidosGanados}</th>
+                                            <th class="text-center">#{alumnoLenguajeEdit.detallesTorneo}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -314,5 +316,5 @@
         <!-- ********************************************************************* -->
 
     </h:body>
-
+    </f:view>
 </html>
