@@ -41,6 +41,17 @@
             <var>indexTextEdit</var>
         </resource-bundle>
         
+        <!--Boton de traduccion-->
+        <resource-bundle>
+            <base-name>sipad.languages.pages</base-name>
+            <var>idioma</var>
+        </resource-bundle>
+        
+        <resource-bundle>
+            <base-name>sipad.languages.pages</base-name>
+            <var>pagesEti</var>
+        </resource-bundle>
+        
     </application>
 
 </faces-config>
