@@ -25,6 +25,7 @@
                 <!-- Encavezado -->
                 <header class="row p-1">
 
+
                     <!-- Nombre de la academia deportiva -->
                     <div class="col-12 pl-4 justify-content-center ">
                         <!-- Logo de la academia -->
@@ -33,6 +34,93 @@
                             </div>	
                             <h2 class="col-12 pt-3 text-center d-md-none">Bocaneiros</h2>
                             <h2 class="col-12 pt-3 d-none d-md-block text-center">Academia Deportiva Bocaneiros</h2>
+
+                <!-- Nombre de la academia deportiva -->
+                <div class="col-12 pl-4 justify-content-center">
+                    <!-- Logo de la academia -->
+                    <div class="h-100 justify-content-center">
+                        <div class="h-100 logo">
+                        </div>	
+                        <h2 class="col-12 d-md-none">Bocaneiros</h2>
+                        <h2 class="col-12 d-none d-md-block">Academia Deportiva Bocaneiros</h2>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- Navegacion -->
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light row">
+
+                <!-- Boton de moviles -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegador" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Botones de pantalla grande -->
+                <div class="collapse navbar-collapse" id="navegador">
+
+                    <!-- Botones de paginas -->
+                    <ul class="nav mr-auto">
+                             <li class="nav-item active">
+                                 <a class="nav-link" href="../../index.xhtml"><i class="fas fa-home"></i> Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneo_index.xhtml"><i class="fas fa-trophy"></i> Torneos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="categoriaDeportiva_index.xhtml"><i class="fas fa-futbol"></i> Categoria deportiva </a>
+                        </li> 
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link" href="inscripcion_index.xhtml">
+                                <i class="fas fa-file-signature"></i> Inscripciónes
+                            </a>    
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link actual" href="eventos_index.xhtml"><i class="fas fa-laugh"></i> Eventos </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-key"></i> Ingresar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" data-toggle="modal" href="#iniciar">
+                                    Iniciar sesion
+                                </a>
+
+                                <a class="dropdown-item" data-toggle="modal" href="inscripcion_index.xhtml" onclick="registroIni()">
+                                    Registrarse
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" href="#cambiar_pass">
+                                    Olvide  mi contraseña
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <!-- Informaion del deportista -->
+            <div class="row">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../../resources/images/bingo_fondo.jpg" class="d-block w-100 img-fixed" alt="..."/>
+
                         </div>
                     </div>
 
