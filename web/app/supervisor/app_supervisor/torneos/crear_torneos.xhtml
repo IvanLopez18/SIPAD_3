@@ -9,7 +9,7 @@
       >
 
     <h:head>
-        <title>Crear categoria deportiva</title>
+        <title>Crear Torneo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <ui:include src="../../../../WEB-INF/supervisor/link_estilos.xhtml"/>
@@ -37,42 +37,48 @@
                 <h:form class="p-3">
                     <div class="form-group">
                         <h:outputLabel value="#{textSupp.nombreTo}" for="nombreT"/>
-                        <h:inputText class="form-control" id="nombreT" required="true" a:pattern="[0-9]{6}"/>
+                        <h:inputText class="form-control" id="nombreT" value="#{torneoController.torneo.nombreTorneo}" required="true" a:pattern="[A-Za-z]{1,20}"/>
                         <h:message for="nombreT"/>
                     </div>
                     
                     <div class="form-group">
                         <h:outputLabel value="#{textSupp.fechaInTo}" for="fechaIT"/>
-                        <h:inputText class="form-control" id="fechaIT" required="true" a:pattern="[0-9]{6}"/>
+                        <h:inputText class="form-control" id="fechaIT" a:type="date"
+                                     value="#{torneoController.torneo.fechaInicio}" required="true"> 
+                            <f:convertDateTime pattern="yyyy-mm-dd"/>
+                        </h:inputText>
                         <h:message for="fechaIT"/>
                     </div>
                     
                     <div class="form-group">
                         <h:outputLabel value="#{textSupp.fechaFinTo}" for="fechaFT"/>
-                        <h:inputText class="form-control" id="fechaFT" required="true" a:pattern="[0-9]{5}"/>
-                        <h:message for="fechaFT"/>
-                    </div>
-                    
-                    <div class="form-group">
-                        <h:outputLabel value="#{textSupp.imangenTo}" for="fotoT"/>
-                        <h:inputFile class="form-control p-0" id="fotoT" required="true" a:pattern="[0-9]{6}"/>
-                        <h:message for="nombreT"/>
+                        <h:inputText class="form-control" id="fechaFT" 
+                                     value="#{torneoController.torneo.fechaFinal}" required="true">
+                            <h:message for="fechaFT"/> <f:convertDateTime pattern="yyyy-mm-dd"/>
+                        </h:inputText>
                     </div>
                     
                     <div class="form-group">
                         <h:outputLabel value="#{textSupp.decripcionTo}" for="decripcionTo"/>
-                        <h:inputText class="form-control p-0" id="decripcionTo" required="true" a:pattern="[0-9]{6}"/>
+                        <h:inputText class="form-control p-0" id="decripcionTo" value="#{torneoController.torneo.descripcionTorneo}" required="true" a:pattern="[A-Za-z]{1,200}"/>
                         <h:message for="decripcionTo"/>
                     </div>
                     
                     <div class="form-group">
                         <h:outputLabel value="#{textSupp.lugarTor}" for="lugarT"/>
-                        
+                        <h:inputText class="form-control p-0" id="lugarT" 
+                        value="#{torneoController.torneo.idLugarTorneo}" required="true" a:pattern="[0-9]{1,4}"/>
                         <h:message for="lugarT"/>
                     </div>
-
+                    
+                    <div class="form-group">
+                        <h:outputLabel value="#{textSupp.supervisor}" for="idSup"/>
+                        <h:inputText class="form-control p-0" id="idSup" value="#{torneoController.torneo.idSupervisor}" required="true" a:pattern="[0-9]{1,3}"/>
+                        <h:message for="idSup"/>
+                    </div>
+                    
                     <div class="row">
-                        <h:commandButton value="#{textSupp.crear}" class="btn btn-primary col-3 mx-auto" onclick="crearCD()"/>
+                        <h:commandButton value="#{textSupp.crear}" class="btn btn-primary col-3 mx-auto" action="#{torneoController.crearTorneo()}" onclick="crearCD()"/>
                     </div>
                 </h:form>
 

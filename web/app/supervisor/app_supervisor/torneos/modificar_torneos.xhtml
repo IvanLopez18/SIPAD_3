@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      >
+    <h:head>
+        <title>Modificar torneo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <ui:include src="../../../../WEB-INF/supervisor/link_estilos.xhtml"/>
+        
+    </h:head>
+    
+    <f:view locale="es">
+
+        <h:body>
+
+
+            <!-- NAVEGADOR -->
+            <ui:include src="../../../../WEB-INF/supervisor/nav/nav_sup_sec.xhtml"/>
+
+            <div class="container w-50 bg-light p-5">
+                <h:form>
+
+                    <h:outputLabel class="col-12 text-center text-danger" value="#{textSupp.modificar}"/>
+
+
+                    <br/><br/>
+
+                    <h:outputLabel class="col-12"  for="nombre" value="#{textSupp.nombreTo}"/>
+                    <h:inputText class="col-12" id="nombre" value="#{torneoController.torneo.nombreTorneo}"/>
+                    <h:messages class="col-12" for="nombre"/>
+
+                    <br/><br/>
+
+                    <h:outputLabel class="col-12" for="fechaInicio" value="#{textSupp.fechaInTo}"/>
+                    <h:inputText class="col-12" id="fechaInicio" value="#{torneoController.torneo.fechaInicio}"/>
+                    <h:messages class="col-12" for="fechaInicio"/>
+
+                    <br/><br/>
+
+                    <h:outputLabel class="col-12" for="fechaFinal" value="#{textSupp.fechaFinTo}"/>
+                    <h:inputText class="col-12" id="fechaFinal" value="#{torneoController.torneo.fechaFinal}"/>
+                    <h:messages class="col-12" for="fechaFinal"/>
+
+                    <br/><br/>
+
+                    <h:outputLabel class="col-12" for="descripcion" value="#{textSupp.decripcionTo}"/>
+                    <h:inputText class="col-12" id="descripcion" value="#{torneoController.torneo.descripcionTorneo}"/>
+                    <h:messages class="col-12" for="descripcion"/>
+
+                    <br/><br/>
+
+                    
+
+                    <h:outputLabel class="col-12" for="lugar" value="#{textSupp.lugarTor}"/>
+                    <h:inputText class="col-12" id="lugar" value="#{torneoController.torneo.idLugarTorneo}"/>
+                    <h:messages class="col-12" for="lugar"/>
+
+                    <br/><br/>
+                     
+
+                    <h:outputLabel class="col-12" for="supervisor" value="#{textSupp.supervisor}"/>
+                    <h:inputText class="col-12" id="supervisor" value="#{torneoController.torneo.idSupervisor}"/>
+                    <h:messages class="col-12" for="supervisor"/>
+
+                    <br/><br/>
+
+                    <div class="mx-auto col-12 text-center">
+                        <h:commandButton class="btn btn-info" value="#{textEdit.guardar}" 
+                                         action="#{TorneoController.actualizarTorneo()}"/>
+                    </div>
+
+
+                    <h:commandLink class="btn btn-dark" action="listar_torneos" value="#{textEdit.volver}" />
+
+                </h:form>
+            </div>
+
+            </h:body>
+
+    </f:view>
+
+</html>
