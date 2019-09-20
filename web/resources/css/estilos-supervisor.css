@@ -1,0 +1,49 @@
+/*Fuente de texto */
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+/*Diseño de fondo*/
+body{
+	background-image: url(../img/fondo-Supervisor.png);
+	background-size:100% ;
+}
+/*Titulo principal*/
+h1{
+	margin-top:20px;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+
+}
+/*Zona donde va la foto del administrador*/
+.fotoPerfil{
+	text-align: center;
+	margin-top: 20px;
+}
+/*Contenedor de todos los botones principales*/
+.botones{
+	margin-left:220px;
+}
+/*Circulo de fondo de los botones*/
+a.btn{
+	border-radius: 1000px;
+	height:100px;
+	width:100px;
+	background-color: rgba(0, 0, 0, 0.1);
+
+}
+/*Imagenes que estan dentro de los circulos de botones*/
+a.btn img{
+	height:70px;
+	width:70px;
+	margin-top: 10px;
+}
+/*Mensaje de bienvenida*/
+h3{
+	margin-top:120px;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+
+}
+/* Animacion con Click */
+nav-ani:hover{
+	background-color: blue;
+	color: white;
+}	
